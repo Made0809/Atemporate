@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de contacto de tienda online" />
+    <meta name="keywords" content="artesanía, joyería, cerámica, decoración, hecho a mano" />
+    <meta name="author" content="Madeling" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-menu">
+          <h2 class="logo">
+            <a href="index.html" aria-label="Inicio Atemporarte">Atemporarte</a>
+          </h2>
+          <label for="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      
+        <input type="checkbox" id="menu-toggle" hidden />
+      
+        <nav id="nav" class="nav-bar" role="navigation" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="Productos.html"><i class="fas fa-box-open" aria-hidden="true"></i> Productos</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="formulario">
+        <h2><i class="fas fa-envelope"></i> Llena el formulario de contacto</h2>
+      
+        <form class="contacto" action="#">
+          <fieldset>
+            <legend><i class="fas fa-user"></i> Información Personal</legend>
+      
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+      
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Tu E-mail" required>
+      
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Tu Teléfono">
+      
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje" rows="4" required></textarea>
+          </fieldset>
+      
+          <fieldset>
+            <legend><i class="fas fa-box-open"></i> Información sobre la compra</legend>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="5" max="100" step="5" required>
+          </fieldset>
+      
+          <fieldset>
+            <legend><i class="fas fa-phone-alt"></i> Contacto</legend>
+            <p>¿Cómo desea ser contactado?</p>
+            <div class="forma-contacto">
+              <label><input type="radio" name="contacto" value="telefono" required> Teléfono</label>
+              <label><input type="radio" name="contacto" value="correo"> Correo</label>
+            </div>
+          </fieldset>
+      
+          <button type="submit" aria-label="Enviar formulario de contacto">
+            <i class="fas fa-paper-plane"></i> Enviar
+          </button>
+        </form>
+      </main>
+      
+      
+      <!--Footer-->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-branding">
+            <h2 class="logo"><a href="index.html">Atemporarte</a></h2>
+            <p>&copy; 2025 Atemporarte · Arte con alma · Hecho a mano con ❤️</p><br>
+          </div>
+          <nav class="nav-footer" role="navigation" aria-label="Enlaces del pie de página">
+            <ul>
+              <li><a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Inicio</a></li>
+              <li><a href="Productos.html"><i class="fas fa-box-open" aria-hidden="true"></i> Productos</a></li>
+              <li><a href="contacto.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    
+
+
+
+</body>
+</html>
